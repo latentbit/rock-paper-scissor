@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -10,11 +11,26 @@ body > div:first-child {
     padding: 20px;
     background-color: rgb(24, 43, 113);
     color: white;
-    margin-bottom: 3vh;
 }
 
 h2 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 3vh;
+    margin: 3vh 0;
+}
+
+body > h2 + div {
+    display: flex;
+    gap: 5vw;
+    margin: 0 20px;
+}
+
+div > button {
+    flex: auto;
+    font-size: 15vw;
+    max-width: 400px;
+    aspect-ratio: 1;
+    background-color: rgb(24, 43, 113);
+    border-radius: 10px;
+    border: 5px solid rgb(29, 38, 68);
 }
